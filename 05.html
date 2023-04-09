@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>四则运算</title>
+	</head>
+	<body>
+		 <script>
+        document.write('<h5>简易四则运算</h5>')
+        var aa;
+        var a1 = Number(prompt('请输入第一个数',''))
+        var b =prompt('请输入一个运算符','')
+        var a2 =  Number(prompt('请输入第二个数',''))
+        if(isNaN(a1) || isNaN(a2)){
+            alert('你输入的不是数字！')
+        }else{
+            switch(b){
+                case '*':
+                    aa = a1*a2
+                    break
+                case '/':
+                    aa = a1/a2
+                    break
+                case '+':
+                    aa = a1+a2
+                    break
+                case '-':
+                    aa = a1-a2
+                    break
+                default:
+                    aa = '你输入运算符有误！'
+            }
+            document.write(a1+b+a2+'='+aa)
+        }
+    </script>
+	</body>
+</html>
